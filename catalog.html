@@ -1,122 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stackdraft — Offers</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Stackdraft — offer withdrawn</title>
+  <meta name="robots" content="noindex,nofollow" />
   <style>
-    :root {
-      --bg: #121a16; --panel: #1b2821; --ink: #eaf2ec; --muted: #9db5a6;
-      --gold: #d4a84b; --gold-ink: #1a1408; --line: rgba(234,242,236,.12);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; color: var(--ink); font-family: "Source Sans 3", sans-serif;
-      background:
-        radial-gradient(ellipse 80% 50% at 100% 0%, rgba(212,168,75,.18), transparent 55%),
-        radial-gradient(ellipse 60% 40% at 0% 30%, rgba(45,110,85,.2), transparent 50%),
-        var(--bg);
-    }
-    .wrap { max-width: 960px; margin: 0 auto; padding: clamp(1.5rem,4vw,3rem); }
-    .brand { font-family: Fraunces, serif; font-size: clamp(2.2rem,5vw,3.6rem); letter-spacing: -.03em; margin: 0; }
-    .brand em { color: var(--gold); font-style: normal; }
-    .sub { color: var(--muted); max-width: 42ch; margin: .6rem 0 2rem; line-height: 1.45; }
-    .grid { display: grid; gap: 1rem; }
-    @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
-    article {
-      background: linear-gradient(165deg, var(--panel), #15201a);
-      border: 1px solid var(--line); padding: 1.25rem 1.35rem;
-      animation: rise .5s ease both;
-    }
-    article:nth-child(2) { animation-delay: .06s; }
-    article:nth-child(3) { animation-delay: .12s; }
-    article:nth-child(4) { animation-delay: .18s; }
-    @keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-    @media (prefers-reduced-motion: reduce) { article { animation: none; } }
-    .tag { font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); margin: 0 0 .35rem; }
-    h2 { font-family: Fraunces, serif; font-weight: 500; font-size: 1.25rem; margin: 0 0 .5rem; }
-    p { color: var(--muted); margin: 0 0 1rem; line-height: 1.45; font-size: .98rem; }
-    .row { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
-    .price { font-weight: 600; }
-    a.btn {
-      background: var(--gold); color: var(--gold-ink); text-decoration: none;
-      font-weight: 600; padding: .65rem 1rem; display: inline-block;
-      transition: transform 160ms ease;
-    }
-    a.btn:hover { transform: translateY(-2px); }
-    .featured { grid-column: 1 / -1; }
-    footer { margin-top: 2rem; color: var(--muted); font-size: .9rem; }
+    :root { color-scheme: light; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, sans-serif; background:#111; color:#eee;
+      min-height:100vh; display:grid; place-items:center; padding:2rem; }
+    main { max-width:34rem; line-height:1.5; }
+    h1 { font-size:1.5rem; margin:0 0 .75rem; }
+    p { margin:0 0 .75rem; color:#bbb; }
   </style>
-<script>window.STACKDRAFT_PAY_URL='https://buy.stripe.com/fZudRbalc1aV5h27oabEA00';</script>
 </head>
 <body>
-  <main class="wrap">
-    <p class="brand">Stack<em>draft</em></p>
-    <p class="sub">Outbound systems for operators who sell services. Pick a rung — start today.</p>
-    <div class="grid">
-      <article class="featured">
-        <p class="tag">Best ROI</p>
-        <h2>Pipeline Install (Async)</h2>
-        <p>We customize sequences, ICP framework, discovery script, and proposal shell to your offer. Delivered in 72 hours by email.</p>
-        <div class="row">
-          <span class="price">$297</span>
-          <a class="btn" href="mailto:hello@stackmail.pyseas.app?subject=ORDER%20STACKDRAFT%20INSTALL%20297&body=Name%3A%0AOffer%20one-liner%3A%0AICP%3A%0AProof%20points%3A%0APrice%3A%0ACalendar%20link%3A%0APreferred%20pay%20method%20(Stripe%20link%20%2F%20PayPal%20%2F%20Zelle)%3A">Order by email</a>
-          <a class="btn" href="install.html" style="background:transparent;color:var(--gold);border:1px solid var(--gold)">Details</a>
-        </div>
-      </article>
-      <article>
-        <p class="tag">Retainer</p>
-        <h2>Growth Operator</h2>
-        <p>80 personalized outreaches/mo, weekly scoreboard, proposal support. Async.</p>
-        <div class="row">
-          <span class="price">$1,500/mo</span>
-          <a class="btn" href="mailto:hello@stackmail.pyseas.app?subject=ORDER%20STACKDRAFT%20RETAINER%201500&body=Name%3A%0AOffer%3A%0AICP%3A%0ASending%20rules%3A">Order by email</a>
-        </div>
-      </article>
-      <article>
-        <p class="tag">DIY pack</p>
-        <h2>Client Pipeline Pack</h2>
-        <p>30-day outbound system: emails, LinkedIn openers, scripts, scoreboard.</p>
-        <div class="row">
-          <span class="price">$47</span>
-          <a class="btn" href="mailto:hello@stackmail.pyseas.app?subject=ORDER%20STACKDRAFT%20PACK%2047&body=Name%3A%0AEmail%20for%20delivery%3A">Order by email</a>
-        </div>
-      </article>
-      <article>
-        <p class="tag">Entry</p>
-        <h2>AI Ops Prompt Pack</h2>
-        <p>120 prompts for proposals, outreach, scoping, delivery.</p>
-        <div class="row">
-          <span class="price">$19</span>
-          <a class="btn" href="mailto:hello@stackmail.pyseas.app?subject=ORDER%20STACKDRAFT%20PROMPTS%2019&body=Name%3A%0AEmail%20for%20delivery%3A">Order by email</a>
-        </div>
-      </article>
-    
-      <article>
-        <p class="tag">Call closer</p>
-        <h2>Discovery Scorecard</h2>
-        <p>Score every sales call /12. Propose, pilot, or walk — same day.</p>
-        <div class="row">
-          <span class="price">$97</span>
-          <a class="btn" href="scorecard.html">Details</a>
-        </div>
-      </article>
-    </div>
-    <footer>Checkout: reply to order email with payment confirmation. Instant digital delivery after payment clears.</footer>
+  <main>
+    <h1>This offer has been withdrawn</h1>
+    <p>Links shared in earlier soft-launch messages are void. Checkout is disabled.</p>
+    <p>If you received those emails by mistake, please disregard them — no action is needed.</p>
   </main>
-  <script>
-    (function () {
-      var pay = window.STACKDRAFT_PAY_URL;
-      if (!pay) return;
-      document.querySelectorAll('a.btn').forEach(function (a) {
-        if (a.getAttribute('href') && a.getAttribute('href').indexOf('mailto:') === 0 && a.textContent.indexOf('Order') === 0) {
-          // leave mailto as fallback; primary pay URL can be injected per-SKU later
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
